@@ -116,6 +116,7 @@ opencv_module(
     'modules/highgui/src/window_QT.cpp',
     'modules/highgui/src/window_QT.h',
     'modules/highgui/src/window_QT.qrc',
+    'modules/highgui/src/window_carbon.cpp',
     'modules/highgui/src/window_cocoa.mm',
     'modules/highgui/src/window_w32.cpp',
     'modules/highgui/src/window_winrt.cpp',
