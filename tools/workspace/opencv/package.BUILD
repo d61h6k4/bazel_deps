@@ -29,6 +29,7 @@ CONFIG = {
         "imgproc",
         "video",
         "videoio",
+        "highgui",
     ],
     "opts" : @PROCESSOR_OPTS@,
 }
@@ -105,4 +106,20 @@ opencv_module(
         'modules/videoio/src/cap_winrt/CaptureFrameGrabber.cpp',
         'modules/videoio/src/cap_winrt/MediaStreamSink.cpp',
     ],
+)
+
+opencv_module(
+  name = "highgui",
+  config = CONFIG,
+  deps = [":imgproc", "imgcodecs"]
+  excludes = [
+    'modules/highgui/src/window_QT.cpp',
+    'modules/highgui/src/window_QT.h',
+    'modules/highgui/src/window_QT.qrc',
+    'modules/highgui/src/window_cocoa.mm',
+    'modules/highgui/src/window_w32.cpp',
+    'modules/highgui/src/window_winrt.cpp',
+    'modules/highgui/src/window_winrt_bridge.cpp',
+    'modules/highgui/src/window_winrt_bridge.hpp',
+  ],
 )
