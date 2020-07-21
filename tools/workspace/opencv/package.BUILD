@@ -111,7 +111,7 @@ opencv_module(
 opencv_module(
   name = "highgui",
   config = CONFIG,
-  deps = [":imgproc", "imgcodecs"],
+  deps = [":imgproc", ":imgcodecs", ":videoio"],
   excludes = [
     'modules/highgui/src/window_QT.cpp',
     'modules/highgui/src/window_QT.h',
