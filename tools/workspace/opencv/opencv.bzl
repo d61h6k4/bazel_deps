@@ -29,14 +29,14 @@ _OPENCV_COPTS = [
 ]
 
 _KNOWN_OPTS = [
-    ("neon", "armeabihf"),
-    ("vfpv3", "armeabihf"),
+    ("neon", "armhf"),
+    ("vfpv3", "armhf"),
     ("avx", "x86_64"),
     ("avx2", "x86_64"),
     ("avx512_skx", "x86_64"),
     ("cuda", "x86_64"),
     ("fp16", "x86_64"),
-    ("fp16", "armeabihf"),
+    ("fp16", "armhf"),
     ("sse", "x86_64"),
     ("sse2", "x86_64"),
     ("sse3", "x86_64"),
@@ -90,7 +90,7 @@ def opencv_base(config = None):
         name = "cv_cpu_config.h",
         content = select({
             "@com_github_mjbots_bazel_deps//conditions:arm" :
-            _format_config("armeabihf", config.get("opts", [])),
+            _format_config("armhf", config.get("opts", [])),
             "@com_github_mjbots_bazel_deps//conditions:x86_64" :
             _format_config("x86_64", config.get("opts", [])),
         }),

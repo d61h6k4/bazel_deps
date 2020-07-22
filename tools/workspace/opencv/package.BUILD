@@ -98,7 +98,6 @@ opencv_module(
         'modules/videoio/src/cap_mfx_reader.cpp',
         'modules/videoio/src/cap_mfx_writer.cpp',
         'modules/videoio/src/cap_giganetix.cpp',
-        'modules/videoio/src/cap_gstreamer.cpp',
         'modules/videoio/src/cap_xine.cpp',
         'modules/videoio/src/cap_ximea.cpp',
         'modules/videoio/src/cap_vfw.cpp',

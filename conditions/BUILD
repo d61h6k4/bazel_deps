@@ -84,35 +84,35 @@ alias(
 config_setting(
     name = "sizet_4bytes",
     values = {
-        "cpu" : "armeabihf",
+        "cpu" : "armhf",
     },
 )
 
 config_setting(
     name = "long_4bytes",
     values = {
-        "cpu" : "armeabihf",
+        "cpu" : "armhf",
     },
 )
 
 config_setting(
     name = "long_double_8bytes",
     values = {
-        "cpu" : "armeabihf",
+        "cpu" : "armhf",
     },
 )
 
 config_setting(
     name = "sizet_int",
     values = {
-        "cpu" : "armeabihf",
+        "cpu" : "armhf",
     },
 )
 
 config_setting(
     name = "arm",
     values = {
-        "cpu" : "armeabihf",
+        "cpu" : "armhf",
     },
 )
 
